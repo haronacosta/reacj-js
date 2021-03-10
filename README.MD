@@ -4,4 +4,4 @@
 
 ##### Create React App
 
-- [URL React Create App](https://create-react-app.dev/)
+- [Create React App](https://create-react-app.dev/)
