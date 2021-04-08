@@ -4,6 +4,7 @@ describe('Pruebas en el archivo 11-async-await', () => {
   test('Obteniendo la url de la imagen con getImagen', async () => {
     const url = await getImagen();
 
+    console.log(url);
     expect(typeof url).toBe('string');
   });
 });
