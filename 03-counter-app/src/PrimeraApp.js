@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function PrimeraApp({ saludo }) {
+function PrimeraApp({ saludo, subtitulo }) {
   return (
     <>
       <h1>{saludo}</h1>
-      <p>Mi primera aplicación</p>
+      <p>{subtitulo}</p>
     </>
   );
 }
