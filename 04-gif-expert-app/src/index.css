@@ -1,7 +1,11 @@
-* {
-  font-family: Arial, Helvetica, sans-serif;
-}
+@import url('./assets/css/bootstrap-reboot.css');
 
 body {
   padding: 60px;
+}
+
+input {
+  color: #b4610e;
+  font-size: 1.2rem;
+  width: 100%;
 }
