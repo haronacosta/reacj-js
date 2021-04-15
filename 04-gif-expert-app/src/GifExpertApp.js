@@ -1,25 +1,20 @@
 import React, { useState } from 'react';
 import AddCategory from './components/AddCategory';
+import GridGifs from './components/GridGifs';
 
 const GifExpertApp = () => {
-  const initialCategories = ['One Puch', 'Samurai X', 'Hunter x Hunter'];
+  const initialCategories = ['One Puch'];
 
   const [categories, setCategories] = useState(initialCategories);
-
-  const handleAdd = () => {
-    // Otra manera del useState
-    setCategories((cat) => [...cat, 'Naruto']);
-  };
 
   return (
     <>
       <h2>GifExpertApp</h2>
-      <AddCategory />
+      <AddCategory setCategories={setCategories} />
       <hr />
-      <button onClick={handleAdd}>Agregar</button>
       <ol>
         {categories.map((category, i) => (
-          <li key={i}>{category}</li>
+          <GridGifs key={category} category={category} />
         ))}
       </ol>
     </>
