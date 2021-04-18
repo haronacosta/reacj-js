@@ -15,7 +15,7 @@ const AddCategory = ({ setCategories }) => {
 
     if (inputValue.trim().length > 2) {
       // Otra manera del useState
-      setCategories((cat) => [...cat, inputValue]);
+      setCategories((cat) => [inputValue, ...cat]);
 
       setInputValue('');
     }
