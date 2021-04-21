@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el componente AddCategory Se debe de mostrar correctamente el componente 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <p />
+  <input
+    id="newCategory"
+    name="newCategory"
+    onChange={[Function]}
+    placeholder="Ingrese un valor"
+    type="text"
+    value=""
+  />
+</form>
+`;
