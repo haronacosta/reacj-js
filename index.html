@@ -1,0 +1,96 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro del comprador</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" media="all" href="{{asset('css/bootstrap.css')}}">
+    <link rel="stylesheet" type="text/css" media="all" href="{{asset('css/bootstrap.min.css')}}">
+    <script type="text/javascript" href="{{asset('js/switchery.min.js')}}"></script>
+    <script type="text/javascript" href="{{asset('js/bootstrap.js')}}"></script>
+
+</head>
+
+<body style="background-color: #59287F">
+    <div class="card">
+
+        <div class="card-body" >
+            <div class="text-center">
+                <h3>Datos Del prospectos </h3>
+            </div>
+            <form action="{{ route ('prueba.store')}}" method="POST">
+                @csrf
+                @method('POST')
+                <div class="form-row">
+                    <div class="col-md-6 mb-4">
+                        <label>Nombre y Apellido</label>
+                        <input type="text" class="form-control" name="Nombre" id="validationDefault01"
+                            placeholder="Nombre y Apellido" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="validationDefault02">RUT</label>
+                        <input type="text" class="form-control" name="RUT" id="validationDefault02" placeholder="RUT"
+                            required>
+                    </div>
+                    <div class="col-md-2 mb-2">
+                        <label for="validationDefaultUsername">DV</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                            </div>
+                            <input type="text" class="form-control" name="DV" id="validationDefaultUsername"
+                                placeholder="DV" aria-describedby="inputGroupPrepend2" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-4">
+                        <label for="validationDefault03">Correo Electronico</label>
+                        <input type="email" class="form-control" name="Correo" id="validationDefault03"
+                            placeholder="Correo Electronico" required>
+                    </div>
+                    <div class="col-md-5 mb-3">
+                        <label for="validationDefault04">Numero de Telefono</label>
+                        <input type="text" class="form-control" name="Telefono" id="validationDefault04"
+                            placeholder="Numero de Telefono" required>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="validationDefault04">Producto</label>
+                        <select name="producto" id="">
+                            @foreach($prod as $prods)
+                            <option>
+                                {{ $prods->producto }}
+                            </option>
+                            @endforeach
+                        </select>
+
+                    </div>
+
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Comentarios</label>
+
+                        <textarea class="form-control" name="Comentarios"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                        <label class="form-check-label" for="invalidCheck2">
+                            Acepta que los datos antes mencionados son ciertos
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary" type="submit">Guardar</button>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
