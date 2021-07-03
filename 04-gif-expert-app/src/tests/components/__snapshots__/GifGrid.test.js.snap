@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el componente <GifGrid /> Debe de regresar correctamente el componente 1`] = `
+<Fragment>
+  <h3>
+    Liverpool
+  </h3>
+  <h6
+    className="animate__animated animate__pulse"
+  >
+    Cargando... 
+  </h6>
+</Fragment>
+`;
+
+exports[`Pruebas en el componente <GifGrid /> Debe mostrar data despues de un gitFetch 1`] = `
+<Fragment>
+  <h3>
+    Liverpool
+  </h3>
+  <div
+    className="card-grid"
+  >
+    <GifGridItem
+      id={12345}
+      key="12345"
+      title="Titulo de prueba"
+      url="https://localhost.loc/img/unaimagen.jpg"
+    />
+    <GifGridItem
+      id={1234}
+      key="1234"
+      title="Titulo de prueba"
+      url="https://localhost.loc/img/unaimagen.jpg"
+    />
+    <GifGridItem
+      id={12445}
+      key="12445"
+      title="Titulo de prueba"
+      url="https://localhost.loc/img/unaimagen.jpg"
+    />
+  </div>
+</Fragment>
+`;
