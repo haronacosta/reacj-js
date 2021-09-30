@@ -24,6 +24,9 @@ const useFetch = (url) => {
         if (isMounted.current) {
           setState({ loading: false, error: false, data });
         }
+      })
+      .catch(() => {
+        setState({ loading: false, error: true, data: null });
       });
   }, [url]);
 
