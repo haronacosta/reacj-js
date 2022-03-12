@@ -4,11 +4,11 @@ import { useCounter } from '../../hooks/useCounter';
 import './counter.css';
 
 const CounterWithCustomHook = () => {
-  const { state, increment, decrement, reset } = useCounter(50);
+  const { counter, increment, decrement, reset } = useCounter(50);
   return (
     <>
       <div className='container'>
-        <h1>Counter with hook: {state}</h1>
+        <h1>Counter with hook: {counter}</h1>
         <hr />
 
         <button className='btn btn-primary m-3' onClick={() => increment(2)}>

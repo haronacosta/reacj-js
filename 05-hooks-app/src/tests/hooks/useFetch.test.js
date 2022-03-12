@@ -30,7 +30,7 @@ describe('Pruebas en useFetch', () => {
     expect(error).toBe(false);
   });
 
-  test('Debe de manejar el erro', async () => {
+  test('Debe de manejar el error', async () => {
     const { result, waitForNextUpdate } = renderHook(() =>
       useFetch('https://reqres.in/appid/users?page=2')
     );
