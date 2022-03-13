@@ -4,7 +4,7 @@ import HeroList from '../hero/HeroList';
 const DCScreen = () => {
   return (
     <div>
-      <h1>I am DCScreen</h1>
+      <h1>DCScreen</h1>
 
       <HeroList publisher='DC Comics' />
     </div>

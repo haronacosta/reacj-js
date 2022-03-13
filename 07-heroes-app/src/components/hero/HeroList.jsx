@@ -11,7 +11,7 @@ const HeroList = ({ publisher }) => {
 
   return (
     <>
-      <h1>Hero List</h1>
+      <h2>Hero List</h2>
 
       <p className='text-warning'>Publisher: {publisher}</p>
 
