@@ -35,7 +35,7 @@ const HeroScreen = () => {
       </div>
 
       <div className='col-8'>
-        <h3>{superhero}</h3>
+        <h3 className='heroName'>{superhero}</h3>
 
         <ul className='list-group'>
           <li className='list-group-item'>

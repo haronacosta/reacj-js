@@ -21,7 +21,7 @@ describe('pruebas en el <DashboardRoutes />', () => {
     );
 
     expect(wrapper).toMatchSnapshot();
-    expect(wrapper.find('h1').text().trim()).toBe('MarvelScreen');
+    expect(wrapper.find('h1').text().trim()).toBe('Marvel Screen');
   });
 
   test('Debe mostrarse correctamente los heroes de DC', () => {

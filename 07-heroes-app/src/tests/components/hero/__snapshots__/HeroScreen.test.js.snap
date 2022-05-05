@@ -1,0 +1,147 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el componete <HeroScreen/> Debe de mostrar el heroe si el existe 1`] = `
+<div
+  className="row mt-5"
+>
+  <div
+    className="col-4"
+  >
+    <img
+      alt="Spider Man"
+      className="img-thumbnail animate__animated animate__fadeInLeft"
+      src="/assets/heroes/marvel-spider.jpg"
+    />
+  </div>
+  <div
+    className="col-8"
+  >
+    <h3
+      className="heroName"
+    >
+      Spider Man
+    </h3>
+    <ul
+      className="list-group"
+    >
+      <li
+        className="list-group-item"
+      >
+        <b>
+          Alter ego: 
+        </b>
+        Peter Parker
+      </li>
+      <li
+        className="list-group-item"
+      >
+        <b>
+          Publisher: 
+        </b>
+        Marvel Comics
+      </li>
+      <li
+        className="list-group-item"
+      >
+        <b>
+          First Appearance: 
+        </b>
+        Amazing Fantasy #15
+      </li>
+    </ul>
+    <h5
+      className="mt-4"
+    >
+      Characters: 
+    </h5>
+    <p>
+      Peter Parker
+    </p>
+    <button
+      className="btn btn-outline-info"
+      onClick={[Function]}
+    >
+      Back
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Pruebas en el componete <HeroScreen/> Debe mostrar el no page si el heroe no existe 1`] = `
+<h1>
+  No hero page
+</h1>
+`;
+
+exports[`Pruebas en el componete <HeroScreen/> No debe mostrar el <HeroScreen /> si no hay un heroe 1`] = `
+<h1>
+  No hero page
+</h1>
+`;
+
+exports[`Pruebas en el componete <HeroScreen/> debe de regresar a la pantalla anterior 1`] = `
+<div
+  className="row mt-5"
+>
+  <div
+    className="col-4"
+  >
+    <img
+      alt="Spider Man"
+      className="img-thumbnail animate__animated animate__fadeInLeft"
+      src="/assets/heroes/marvel-spider.jpg"
+    />
+  </div>
+  <div
+    className="col-8"
+  >
+    <h3
+      className="heroName"
+    >
+      Spider Man
+    </h3>
+    <ul
+      className="list-group"
+    >
+      <li
+        className="list-group-item"
+      >
+        <b>
+          Alter ego: 
+        </b>
+        Peter Parker
+      </li>
+      <li
+        className="list-group-item"
+      >
+        <b>
+          Publisher: 
+        </b>
+        Marvel Comics
+      </li>
+      <li
+        className="list-group-item"
+      >
+        <b>
+          First Appearance: 
+        </b>
+        Amazing Fantasy #15
+      </li>
+    </ul>
+    <h5
+      className="mt-4"
+    >
+      Characters: 
+    </h5>
+    <p>
+      Peter Parker
+    </p>
+    <button
+      className="btn btn-outline-info"
+      onClick={[Function]}
+    >
+      Back
+    </button>
+  </div>
+</div>
+`;

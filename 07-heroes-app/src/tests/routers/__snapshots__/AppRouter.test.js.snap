@@ -86,9 +86,9 @@ Array [
         Marvel Screen
       </h1>
       Array [
-        <h1>
+        <h2>
           Hero List
-        </h1>,
+        </h2>,
         <p
           className="text-warning"
         >
